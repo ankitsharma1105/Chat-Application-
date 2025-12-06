@@ -3,6 +3,7 @@
   position: relative;
   background-color: white;
 }
+
 .chat-user {
   padding: 10px 15px;
   display: flex;
@@ -10,14 +11,17 @@
   gap: 10px;
   border-bottom: solid #c6c6c6;
 }
+
 .chat-user img {
   width: 25px;
   border-radius: 50%;
 }
+
 .chat-user img:first-child {
   width: 38px;
   aspect-ratio: 1/1;
 }
+
 .chat-user p {
   flex-wrap: 1;
   font-weight: 500;
@@ -39,21 +43,26 @@
   left: 0;
   right: 0;
 }
+
 .chat-input img {
-  width: 30px;
+  width: 22px;
   cursor: pointer;
 }
+
 .chat-input label {
   display: flex;
 }
+
 .chat-input label img {
   width: 22px;
 }
+
 .chat-input input {
   flex: 1;
   border: none;
   outline: none;
 }
+
 .chat-msg {
   height: calc(100% - 70px);
   padding-bottom: 50px;
@@ -61,11 +70,13 @@
   display: flex;
   flex-direction: column-reverse;
 }
+
 .s-msg div img .r-img div img {
   width: 27px;
   aspect-ratio: 1/1;
   border-radius: 50px;
 }
+
 .s-msg,
 .r-msg {
   display: flex;
@@ -74,10 +85,12 @@
   gap: 5px;
   padding: 0px 15px;
 }
+
 .r-msg {
   flex-direction: row-reverse;
   justify-self: start;
 }
+
 .msg {
   color: white;
   background-color: #077eff;
@@ -87,9 +100,11 @@
   font-weight: 300;
   margin-bottom: 30px;
 }
+
 .r-msg .msg {
   border-radius: 8px 8px 0px 8px;
 }
+
 .s-msg div,
 .r-msg div {
   text-align: center;

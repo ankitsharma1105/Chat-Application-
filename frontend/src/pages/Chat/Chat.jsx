@@ -6,7 +6,7 @@ import RightSideBar from "../../components/RightSidebar/RightSideBar";
 const Chat = () => {
   return (
     <div className="chat">
-      <div clame="div chat-container">
+      <div className="chat-container">
         <LeftSideBar />
         <ChatBox />
         <RightSideBar />
