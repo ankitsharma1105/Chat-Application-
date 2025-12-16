@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import { toast } from "react-toastify";
 const firebaseConfig = {
   apiKey: "AIzaSyBJUGeht14HlnQcFgevFaxkepaLj6fFXdQ",
   authDomain: "chat-application-gs-f3985.firebaseapp.com",
@@ -37,5 +38,8 @@ const signup = async (username, email, password) => {
     })
   } catch (error) {
     console.error(error)
+    toast.error(error.code)
   }
 }
+
+export { signup }

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./Login.css";
 import assets from "../../assets/assets";
-
+import { signup } from "../../components/config/firebase";
 const Login = () => {
   const [currState, setCurrState] = useState("Sign up");
-
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <div className="login">
       <img src={assets.logo_big} className="logo" alt="Logo" />

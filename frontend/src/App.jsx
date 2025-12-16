@@ -4,10 +4,12 @@ import ProfileUpdate from "./pages/ProfileUpdate/ProfileUpdate";
 import Chat from "./pages/Chat/Chat";
 import LeftSideBar from "./components/LeftSideBar/LeftSideBar";
 import ChatBox from "./components/ChatBox/ChatBox";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/ReactToastify.css';
 const App = () => {
   return (
     <>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/chat" element={<Chat />} />
