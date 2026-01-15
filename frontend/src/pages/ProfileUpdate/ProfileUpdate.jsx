@@ -13,8 +13,8 @@ const ProfileUpdate = () => {
             <img src={image ? URL.createObjectURL(image) : assets.avatar_icon} alt="" />
             upload profile image
           </label>
-          <input type="text" placeholder="Your name" required />
-          <textarea placeholder="write profile bio" required></textarea>
+          <input type="text" placeholder="Enter your name" required />
+          <textarea placeholder="write profile bio" required>Hey , I am using chat application </textarea>
           <button type="submit">Save</button>
         </form>
         <img className="profile-pic" src={image ? URL.createObjectURL(image) : assets.logo_icon} alt="" />

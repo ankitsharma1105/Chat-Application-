@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import { getFirestore, setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
 const firebaseConfig = {
   apiKey: "AIzaSyBJUGeht14HlnQcFgevFaxkepaLj6fFXdQ",

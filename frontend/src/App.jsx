@@ -11,12 +11,18 @@ const App = () => {
     <>
       <ToastContainer />
       <Routes>
+
         <Route path="/" element={<Login />} />
-        <Route path="/chat" element={<Chat />} />
+
         <Route path="/profile" element={<ProfileUpdate />} />
-        <Route path="/left" element={<LeftSideBar />} />
-        <Route path="/chatbox" element={<ChatBox />} />
-        < Route path='/chat' element={Chat} />
+
+        <Route path="/chat" element={<Chat />} />
+
+        {/* <Route path="/left" element={<LeftSideBar />} />
+        
+        <Route path="/chatbox" element={<ChatBox />} /> */}
+
+        <Route path='/chat' element={Chat} />
       </Routes>
     </>
   );
